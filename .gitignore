@@ -1,0 +1,6 @@
+diagram.drawio
+.$diagram.drawio.bkp
+.idea
+venv
+__pycache__
+.env
