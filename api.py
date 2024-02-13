@@ -1,6 +1,7 @@
 from app import app
 from api_users import View, Register, Update
 from api_authoriztion import Login
+from api_nltk import FreqDist, FreqDistUpload
 
 
 @app.route("/", methods=["GET"])
@@ -26,3 +27,13 @@ def User_register():
 @app.route("/users/update", methods=["PUT"])
 def User_update():
     return Update()
+
+
+@app.route("/nltk/freq_dist", methods=["POST"])
+def Nltk_freq_dist():
+    return FreqDist()
+
+
+@app.route('/nltk/freq_dist/upload', methods=['POST'])
+def Nltk_freq_dist_upload():
+    return FreqDistUpload()

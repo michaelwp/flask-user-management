@@ -4,3 +4,4 @@ diagram.drawio
 venv
 __pycache__
 .env
+*.txt

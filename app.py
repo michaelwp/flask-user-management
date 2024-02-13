@@ -1,5 +1,5 @@
 from flask import Flask
-# from flask_cors import CORS ## optional
+from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 from os import getenv
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 load_dotenv()
 
-# cors = CORS(app) # optional
+cors = CORS(app)
 
 # setup database
 dbUser = getenv('DB_USER')
